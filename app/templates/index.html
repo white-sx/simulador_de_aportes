@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <title>Teste</title>
+  </head>
+  <body>
+    <div class="container-lg bg-light" style="padding: 20px">
+      <header
+        class="navbar"
+        style="background-color: #e3f2fd; margin-bottom: 12px"
+      >
+        <div style="margin-left: 20px">
+          <h1 style="font-size: 1.6rem">Você Invest</h1>
+        </div>
+        <div style="margin-right: 20px">
+          <img
+            src="../static/barra-de-menu.png"
+            alt="menu"
+            style="width: 35px; height: 30px"
+          />
+        </div>
+      </header>
+      <main>
+        <h1 style="font-size: 2rem">Alocação Otimizada</h1>
+
+        <form  action="" method="POST">
+          <div class="form-group">
+            <div>Resultado:</div>
+            <div class="col-lg-7" readonly>
+              <p class="alert alert-success">{{result}}</p>
+            </div>
+
+            <label for="capital">Quanto você tem para investir?</label>
+            <input
+              type="number"
+              name="totalInvestment"
+              class="form-control"
+              style="margin-bottom: 20px"
+              id="capital"
+              placeholder="1000" 
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="ativos">Quais são os ativos do seu portifólio?</label>
+            <input
+              type="text"
+              class="form-control"
+              style="margin: 20px 0px"
+              name="ativos"
+              placeholder="ITSA4" 
+              required
+              id="ativo1"
+            />
+            <input
+              type="text"
+              class="form-control"
+              style="margin: 20px 0px"
+              name="ativos"
+              placeholder="NUBR33" 
+              required
+              id="ativo2"
+            />
+            <input
+              type="text"
+              class="form-control"
+              style="margin: 20px 0px"
+              name="ativos"
+              placeholder="BMGB4"
+              id="ativo3"
+            />
+            <input
+              type="text"
+              class="form-control"
+              style="margin: 20px 0px"
+              name="ativos"
+              id="ativo4"
+              placeholder="MXRF11"
+            />
+            <input
+              type="text"
+              class="form-control"
+              style="margin: 20px 0px"
+              name="ativos"
+              id="ativo5"
+              placeholder="HASH11"
+            />
+            <input
+              type="text"
+              class="form-control"
+              style="margin: 20px 0px"
+              name="ativos"
+              placeholder="ITUB3"
+              id="ativo6"
+            />
+            <input
+              type="text"
+              class="form-control"
+              style="margin: 20px 0px"
+              name="ativos"
+              placeholder="ITUB4"
+              id="ativo7"
+            />
+            <input
+              type="text"
+              class="form-control"
+              style="margin: 20px 0px"
+              name="ativos"
+              placeholder="EMBR3"
+              id="ativo8"
+            />
+            <input
+              type="text"
+              class="form-control"
+              style="margin: 20px 0px"
+              name="ativos"
+              placeholder="B3SA3"
+              id="ativo9"
+            />
+            <input
+              type="text"
+              class="form-control"
+              style="margin: 20px 0px"
+              name="ativos"
+              placeholder="WEGE3"
+              id="ativo10"
+            />
+          </div>
+          <input type="submit" value="calculate" class="btn btn-primary" />
+        </form>
+      </main>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
